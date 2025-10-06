@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Monitor, Shield, Zap, Users, Phone, Mail, MapPin, ChevronRight, Check, Star, TrendingUp, Award, Clock, ArrowRight } from 'lucide-react';
+import { Menu, X, Monitor, Shield, Zap, Users, Phone, Mail, MapPin, ChevronRight, Check, Star, TrendingUp, Award, Clock, ArrowRight, Headphones } from 'lucide-react';
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,8 +35,8 @@ function App() {
 
   const services = [
     {
-      icon: <Monitor className="w-12 h-12" />,
-      title: "Computer Repair",
+      icon: <Headphones className="w-12 h-12" />,
+      title: "End-User Support & Experience",
       description: "Fast and reliable repair services for all your devices. Hardware and software issues resolved.",
       features: ["Hardware Diagnostics", "Software Troubleshooting", "Data Recovery", "System Optimization"]
     },
@@ -533,7 +533,7 @@ function App() {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1 text-lg">Email</h3>
                   <p className="text-gray-600">support@antmspus.com</p>
-                  <p className="text-gray-600">info@antmsp.com</p>
+                  <p className="text-gray-600">info@antmspus.com</p>
                 </div>
               </div>
 
@@ -564,7 +564,7 @@ function App() {
                 //   className="h-16 object-contain"
                 className="h-16 object-cover rounded-2xl border-2 border-blue-500"
                 />
-                <span className="text-xl font-bold">ANTMSP</span>
+                {/* <span className="text-xl font-bold">ANTMSP</span> */}
               </div>
               <p className="text-gray-400">Your trusted IT solutions partner for business success.</p>
             </div>
@@ -582,7 +582,7 @@ function App() {
             <div>
               <h4 className="font-semibold mb-4 text-lg">Services</h4>
               <ul className="space-y-2">
-                <li className="text-gray-400">Computer Repair</li>
+                <li className="text-gray-400">End-User Support & Experience</li>
                 <li className="text-gray-400">Cybersecurity</li>
                 <li className="text-gray-400">Network Setup</li>
                 <li className="text-gray-400">IT Consulting</li>
